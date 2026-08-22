@@ -151,7 +151,7 @@ const projectsData = [
       "Designed the backend for clean frontend integration and real-time chart generation using Chart.js."
     ],
     stack: ["Python", "Flask", "SQLite", "Chart.js", "REST APIs"],
-    github: "https://github.com/Dazaicodify"
+    github: "https://github.com/Dazaicodify/Expense-Tracker-Flask"
   },
   {
     id: "proj-2",
@@ -166,7 +166,7 @@ const projectsData = [
       "Performed data cleansing, feature scaling, and evaluated accuracy with cross-validation."
     ],
     stack: ["Python", "Scikit-learn", "Streamlit", "Pandas", "NumPy"],
-    github: "https://github.com/Dazaicodify"
+    github: "https://github.com/Dazaicodify/Diabetes-prediction-using-Machine-learning"
   },
   {
     id: "proj-3",
@@ -181,7 +181,7 @@ const projectsData = [
       "Optimized step-by-step queue execution and frontier cell rendering."
     ],
     stack: ["Python", "Algorithms", "Graph Theory", "Data Structures"],
-    github: "https://github.com/Dazaicodify"
+    github: "https://github.com/Dazaicodify/BFS-Pathfinding-Visualizer"
   },
   {
     id: "proj-4",
@@ -196,7 +196,7 @@ const projectsData = [
       "Engineered flexible payload structures and logging mechanisms for high extensibility."
     ],
     stack: ["Python", "REST APIs", "OOP", "Automation", "JSON"],
-    github: "https://github.com/Dazaicodify"
+    github: "https://github.com/Dazaicodify/WhatsApp-Message-Scheduler"
   },
   {
     id: "proj-5",
@@ -211,7 +211,7 @@ const projectsData = [
       "Managed mesh polygon budgets and spatial asset culling to satisfy strict technical constraints."
     ],
     stack: ["C#", "Unity", "LOD Systems", "System Optimization"],
-    github: "https://github.com/Dazaicodify"
+    github: "https://github.com/Dazaicodify/VR-Expo"
   },
   {
     id: "proj-6",
@@ -226,8 +226,7 @@ const projectsData = [
       "Applied CSS Flexbox and Grid for consistent cross-device rendering and added smooth hover micro-animations."
     ],
     stack: ["HTML5", "CSS3", "JavaScript", "Responsive Design", "Flexbox", "CSS Grid"],
-    github: "https://github.com/Dazaicodify",
-    live: "https://dazaicodify.github.io/Portfolio/#projects"
+    github: "https://github.com/Dazaicodify/Nike-website"
   }
 ];
 
