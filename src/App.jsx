@@ -141,16 +141,16 @@ const projectsData = [
   {
     id: "proj-1",
     number: "01",
-    title: "Expense Tracker API",
+    title: "FinancialHub API",
     period: "Jan 2026 – Feb 2026",
     category: "BACKEND & ANALYTICS",
     image: "expense3.png", // Place your project screenshot path here e.g. "/images/expense-tracker.jpg"
-    description: "Modular RESTful API to manage categorized expenses, monthly budgets, and real-time financial chart generation.",
+    description: "A full-stack expense management web app built with a Flask REST API backend and a React (Vite) frontend.",
     bullets: [
-      "Built RESTful APIs with SQLite to manage expenses, categories, and analytics in a structured backend flow.",
-      "Designed the backend for clean frontend integration and real-time chart generation using Chart.js."
+      "Built 15+ REST API endpoints with Flask & SQLAlchemy covering expenses, groups, splits, and settlements.",
+      "Implemented a Splitwise-style bill-splitting engine with greedy debt simplification and CSV export."
     ],
-    stack: ["Python", "Flask", "SQLite", "Chart.js", "REST APIs"],
+    stack: ["Python", "Flask", "SQLAlchemy", "SQLite", "React", "Vite", "Chart.js", "CORS"],
     github: "https://github.com/Dazaicodify/Expense-Tracker-Flask"
   },
   {
