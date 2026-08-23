@@ -516,7 +516,7 @@ function App() {
                     <span className="box-handle handle-br"></span>
 
                     <img
-                      src="/richu2.JPG"
+                      src="/richu3.jpeg"
                       alt="Richu Raju"
                       className="about-portrait-img"
                     />
