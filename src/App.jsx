@@ -25,7 +25,8 @@ import {
   Terminal,
   Sparkles,
   Loader2,
-  AlertCircle
+  AlertCircle,
+  Download
 } from "lucide-react";
 import "./styles.css";
 
@@ -145,10 +146,10 @@ const projectsData = [
     period: "Jan 2026 – Feb 2026",
     category: "BACKEND & ANALYTICS",
     image: "expense3.png", // Place your project screenshot path here e.g. "/images/expense-tracker.jpg"
-    description: "A full-stack expense management web app built with a Flask REST API backend and a React (Vite) frontend.",
+    description: "Full-stack expense management platform with a Flask REST API backend, React (Vite) frontend, and real-time analytics dashboard powered by Chart.js.",
     bullets: [
-      "Built 15+ REST API endpoints with Flask & SQLAlchemy covering expenses, groups, splits, and settlements.",
-      "Implemented a Splitwise-style bill-splitting engine with greedy debt simplification and CSV export."
+      "Engineered 15+ REST API endpoints with Flask & SQLAlchemy covering expenses, groups, splits, settlements, and reporting with CSV export.",
+      "Built a Splitwise-style bill-splitting engine with greedy debt simplification, multi-currency support, and an interactive Chart.js analytics dashboard."
     ],
     stack: ["Python", "Flask", "SQLAlchemy", "SQLite", "React", "Vite", "Chart.js", "CORS"],
     github: "https://github.com/Dazaicodify/Expense-Tracker-Flask"
@@ -156,6 +157,21 @@ const projectsData = [
   {
     id: "proj-2",
     number: "02",
+    title: "ClassPing — EdTech Notification Service",
+    period: "Jul 2025 – Aug 2025",
+    category: "EDTECH · BACKEND",
+    image: "classping1.png",
+    description: "REST API service that delivers scheduled Telegram reminders for classes and assignments, backed by SQLAlchemy for delivery tracking.",
+    bullets: [
+      "Built Flask REST API with SQLAlchemy ORM for scheduling and tracking Telegram notification delivery end-to-end.",
+      "Used APScheduler to trigger class reminders 1 hour prior and assignment alerts 24 hours prior automatically."
+    ],
+    stack: ["Python", "Flask", "Telegram Bot API", "SQLAlchemy", "APScheduler"],
+    github: "https://github.com/Dazaicodify/ClassPing"
+  },
+  {
+    id: "proj-3",
+    number: "03",
     title: "Diabetes Diagnostic Model",
     period: "Dec 2025 – Jan 2026",
     category: "MACHINE LEARNING",
@@ -169,8 +185,8 @@ const projectsData = [
     github: "https://github.com/Dazaicodify/Diabetes-prediction-using-Machine-learning"
   },
   {
-    id: "proj-3",
-    number: "03",
+    id: "proj-4",
+    number: "04",
     title: "BFS Pathfinding Visualizer",
     period: "Nov 2025 – Dec 2025",
     category: "ALGORITHMS & GRAPH THEORY",
@@ -182,21 +198,6 @@ const projectsData = [
     ],
     stack: ["Python", "Algorithms", "Graph Theory", "Data Structures"],
     github: "https://github.com/Dazaicodify/BFS-Pathfinding-Visualizer"
-  },
-  {
-    id: "proj-4",
-    number: "04",
-    title: "WhatsApp Automation Service",
-    period: "Jul 2025 – Aug 2025",
-    category: "SYSTEM AUTOMATION",
-    image: "whatsappautomation.png", // Place your project screenshot path here e.g. "/images/whatsapp-bot.jpg"
-    description: "Automated message scheduling and webhook delivery service engineered with object-oriented design principles.",
-    bullets: [
-      "Designed and developed an automated message scheduling service using Python, REST APIs, and OOP to streamline delivery workflows.",
-      "Engineered flexible payload structures and logging mechanisms for high extensibility."
-    ],
-    stack: ["Python", "REST APIs", "OOP", "Automation", "JSON"],
-    github: "https://github.com/Dazaicodify/WhatsApp-Message-Scheduler"
   },
   {
     id: "proj-5",
@@ -384,6 +385,17 @@ function App() {
           </nav>
 
           <div className="nav-right">
+            <a
+              href="/Richu_Raju_SoftwareEngineer.pdf"
+              target="_blank"
+              rel="noreferrer"
+              download
+              className="pill-resume-btn"
+              title="Download Resume"
+            >
+              <Download size={14} />
+              <span>Resume</span>
+            </a>
             <a href="#contact" className="pill-contact-btn">
               Let's Connect
             </a>
@@ -494,6 +506,17 @@ function App() {
                       <ChevronRight size={16} />
                     </span>
                     <span>Work experience</span>
+                  </a>
+                  <a
+                    href="/resume.pdf"
+                    target="_blank"
+                    rel="noreferrer"
+                    download
+                    className="pill-ghost-btn"
+                    title="View / Download Resume"
+                  >
+                    <Download size={15} />
+                    <span>Download Resume</span>
                   </a>
                   <button onClick={handleCopyEmail} className="pill-ghost-btn" title="Copy Email">
                     {copied ? <Check size={15} className="text-amber" /> : <Copy size={15} />}
