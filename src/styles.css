@@ -185,6 +185,30 @@ a {
   box-shadow: 0 4px 15px rgba(255, 255, 255, 0.25);
 }
 
+.pill-resume-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text-white);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.82rem;
+  padding: 0.5rem 1.1rem;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.pill-resume-btn:hover {
+  color: #0a0a0c;
+  border-color: #ffffff;
+  background: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
 .menu-hamburger {
   display: none;
   background: none;
