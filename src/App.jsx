@@ -386,7 +386,7 @@ function App() {
 
           <div className="nav-right">
             <a
-              href="/Richu_Raju_SoftwareEngineer.pdf"
+              href="/Richu Raju Resume-Nov 2026.pdf"
               target="_blank"
               rel="noreferrer"
               download
